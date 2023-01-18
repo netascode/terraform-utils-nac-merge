@@ -13,11 +13,20 @@ content: |-
 
   A comprehensive example using this module is available here: https://github.com/netascode/nac-aci-comprehensive-example
 
+  ## Examples
+
+  ```hcl
+  {{ include "./examples/complete/main.tf" }}
+
   {{ .Requirements }}
+
+  {{ .Providers }}
 
   {{ .Inputs }}
 
   {{ .Outputs }}
+
+  {{ .Resources }}
 
 output:
   file: README.md

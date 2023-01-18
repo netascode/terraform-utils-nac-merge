@@ -9,12 +9,31 @@ This module is part of the Cisco [*Nexus as Code*](https://cisco.com/go/nexusasc
 
 A comprehensive example using this module is available here: https://github.com/netascode/nac-aci-comprehensive-example
 
+## Examples
+
+```hcl
+module "nac_merge" {
+  source  = "netascode/nac-merge/utils"
+  version = ">= 0.1.0"
+
+  yaml_strings = [
+    "root:\n  child1: value1",
+    "root:\n  child2: value2"
+  ]
+}
+
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
 | <a name="requirement_utils"></a> [utils](#requirement\_utils) | >= 0.2.4 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_utils"></a> [utils](#provider\_utils) | >= 0.2.4 |
 
 ## Inputs
 
@@ -27,4 +46,10 @@ A comprehensive example using this module is available here: https://github.com/
 | Name | Description |
 |------|-------------|
 | <a name="output_model"></a> [model](#output\_model) | Model data. |
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [utils_yaml_merge.model](https://registry.terraform.io/providers/netascode/utils/latest/docs/data-sources/yaml_merge) | data source |
 <!-- END_TF_DOCS -->
