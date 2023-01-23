@@ -36,3 +36,13 @@ resource "test_assertions" "main" {
     }
   }
 }
+
+resource "test_assertions" "defaults" {
+  component = "defaults"
+
+  equal "name" {
+    description = "name"
+    got         = module.main.defaults.defaults.apic.auto_generate_switch_pod_profiles
+    want        = false
+  }
+}

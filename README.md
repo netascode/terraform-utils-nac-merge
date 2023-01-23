@@ -46,10 +46,12 @@ module "nac_merge" {
 | Name | Description |
 |------|-------------|
 | <a name="output_model"></a> [model](#output\_model) | Model data. |
+| <a name="output_defaults"></a> [defaults](#output\_defaults) | Default values. |
 
 ## Resources
 
 | Name | Type |
 |------|------|
+| [utils_yaml_merge.defaults](https://registry.terraform.io/providers/netascode/utils/latest/docs/data-sources/yaml_merge) | data source |
 | [utils_yaml_merge.model](https://registry.terraform.io/providers/netascode/utils/latest/docs/data-sources/yaml_merge) | data source |
 <!-- END_TF_DOCS -->

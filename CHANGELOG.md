@@ -1,3 +1,7 @@
+## 0.1.1 (unreleased)
+
+- Provide merged default values as output
+
 ## 0.1.0
 
 - Initial release
